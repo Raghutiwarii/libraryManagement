@@ -1,0 +1,232 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.heading {
+  text-align: center;
+  color: #333;
+  padding: 20px;
+}
+
+.search {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search input[type="text"],
+.search select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pagination-number {
+  background-color: #eee;
+  color: #333;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.pagination-number:hover {
+  background-color: #ccc;
+}
+
+.pagination-number.active {
+  background-color: #333;
+  color: #fff;
+}
+
+#list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.li {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.li strong {
+  font-weight: bold;
+}
+
+.pages {
+  text-align: center;
+}
+
+.pages h4 {
+  margin: 0;
+}
+
+.pages label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.pages select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Additional Styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container .search label {
+  font-size: 18px;
+}
+
+.container .search input[type="text"],
+.container .search select {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.container .search input[type="text"] {
+  border-radius: 4px 0 0 4px;
+}
+
+.container .search select {
+  border-radius: 0 4px 4px 0;
+}
+
+.container .pagination-container {
+  margin-bottom: 30px;
+}
+
+.container .pagination-number {
+  background-color: #eee;
+  color: #333;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .pagination-number:hover {
+  background-color: #ccc;
+}
+
+.container .pagination-number.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.container #list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container .li {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.container .li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .li strong {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container .li div {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.container .pages select {
+  font-size: 16px;
+  padding: 8px;
+}

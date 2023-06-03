@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+</head>
+<body>
+  <h1 class="heading">Library Management</h1>
+  <div class="search">
+    <label for="searchType">Search By:</label>
+    <input type="text" id="searchTitle" class="show" onkeyup="searchTitle()" placeholder="Filter By Title">
+    <input type="text" id="searchAuthor" class="hidden" onkeyup="searchAuthor()" placeholder="Filter By Author">
+    <input type="text" id="searchSubject" class="hidden" onkeyup="searchSubject()" placeholder="Filter By Subject">
+    <input type="text" id="searchPublish" class="hidden" onkeyup="searchPublish()" placeholder="Filter By Publish"> 
+  </div>
+
+  <div class="container">
+    <div class="pagination-container">
+      <div id="pagination-numbers"></div>
+  </div>
+
+    <ul id="list"></ul>
+    <div class="pages">
+      <h4>Showing <span id="filterCount"></span> of <span id="totalCount"></span> results</h4>
+      <label for="perPage">Per Page:</label>
+      <select id="perPage" onchange="limit()">
+        <option value="10" selected>10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+		<option value="100">100</option>
+      </select>
+    </div>
+  </div>
+</body>
+</html>
