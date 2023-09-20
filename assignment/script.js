@@ -7,6 +7,7 @@ let books = [];
         myData(json);
       });
 
+
     function myData(data) {
       document.getElementById("list").innerHTML = "";
       let content = "";
